@@ -1,0 +1,1 @@
+for i in `seq 1 4`; do mkdir -p "folder$i"; find . -type f -maxdepth 1 | head -n 250 | xargs -i mv "{}" "folder$i"; done # n the first foldern ... to last foderm, a to z the number of files in each folders
